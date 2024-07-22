@@ -1,0 +1,2 @@
+# Nuxata
+Axuataによって作られたNuxtテンプレートです。
