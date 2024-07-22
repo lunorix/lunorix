@@ -7,7 +7,7 @@ export default defineNuxtConfig({
   modules: [ '@nuxt/image'],
   app:{
     head: {
-      title: "サイト名をここに",
+      title: "Lunorix",
       meta: [
         { charset: "utf-8" },
         { name: "viewport", content: "width=device-width, initial-scale=1" },
@@ -15,6 +15,9 @@ export default defineNuxtConfig({
       link: [
         { rel: "icon", type: "image/png", href: "/favicon.png" }, // ファビコンは public/favicon.png にしてください
       ],
+      script: [
+        { src: "https://kit.fontawesome.com/e48ae4e274.js", crossorigin: "anonymous" },
+      ]
     },
     pageTransition: { name: 'page', mode: 'out-in' },
   },

@@ -1,6 +1,6 @@
 <template>
-  <!-- ここにヘッダー -->
+  <GlobalLayoutHeader />
   <slot />
-  <!-- ここにフッター -->
+  <GlobalLayoutFooter />
 </template>
   

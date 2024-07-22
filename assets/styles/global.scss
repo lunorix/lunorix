@@ -1,0 +1,27 @@
+/* Reset CSS */
+@import url("https://cdn.jsdelivr.net/npm/modern-css-reset/dist/reset.min.css");
+
+/* Roboto Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* Apply Roboto to all elements */
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+/* Apply #0022ff to all links */
+a {
+  color: #0022ff;
+}
+
+/* Lunorix's Templete Colors */
+:root {
+  --lunorix-common-fcolor-1: #000000;
+  --lunorix-common-fcolor-2: #0B0B0F;
+  --lunorix-common-fcolor-3: #424242;
+  --lunorix-common-fcolor-4: #5c5c5c;
+}
+
+//body {
+//  background-color: #fcfdff;
+//}
