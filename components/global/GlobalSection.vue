@@ -28,6 +28,8 @@ defineProps({
   .section-content {
     justify-content: center;
     display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
   }
 }
 
@@ -35,7 +37,10 @@ defineProps({
   .section {
     .section-content {
       margin: 0 auto;
-      display: block;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
     }
   }
 }

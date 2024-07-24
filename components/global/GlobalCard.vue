@@ -2,13 +2,18 @@
 const props = defineProps({
   cardTitle: String,
   cardDescription: String,
+  cardUrl: String,
   cardImage: String,
   cardImageAlt: String,
 })
+
+function navigate() {
+  window.location.href = <string>props.cardUrl;
+}
 </script>
 
 <template>
-  <div class="card">
+  <div class="card" @click="navigate()">
     <div class="card-image">
       <img :src="cardImage" :alt="cardImageAlt" />
     </div>
@@ -23,11 +28,15 @@ const props = defineProps({
 
 <style scoped lang="scss">
 .card {
+  cursor: pointer;
   margin: 10px;
   width: fit-content;
   border-radius: 20px;
   padding: 20px;
   background-color: #f8f9fd;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   .card-image {
     overflow: hidden;
