@@ -1,0 +1,2 @@
+# Nuxrix
+Nuxt Template
