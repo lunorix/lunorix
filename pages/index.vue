@@ -3,5 +3,6 @@
 </script>
 
 <template>
-  
-</template>
+  <Hero />
+  <Goals />
+</template>e>
