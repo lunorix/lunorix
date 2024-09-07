@@ -31,7 +31,7 @@ function getRandomInt(max) {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 20px;
+  //margin-bottom: 20px;
   box-shadow: 0 0 100px rgba(0, 0, 0, 0.2);
 
   p {

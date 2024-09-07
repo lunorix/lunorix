@@ -4,5 +4,4 @@
 
 <template>
   <Hero />
-  <Goals />
-</template>e>
+</template>
