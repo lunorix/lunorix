@@ -3,21 +3,25 @@
 </script>
 
 <template>
+  <div class="foo"></div>
   <div class="projects">
-    <p>Under Development</p>
+    <Section section-title="Current Projects">
+      <Card card-title="Lunorix (Website)" card-description="Lunorix Website" card-link="https://github.com/lunorix/lunorix" />
+      <Card card-title="Lunuxt" card-description="Nuxt Template" card-link="https://github.com/lunorix/lunuxt" />
+      <Card card-title="Devrules" card-description="Development Rules" card-link="https://github.com/lunorix/devrules" />
+    </Section>
+    <Section section-title="Archived Projects">
+      <p>None</p>
+    </Section>
   </div>
 </template>
 
 <style scoped lang="scss">
-.projects {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.foo {
+  height: 80px;
+}
 
-  p {
-    font-size: 380px;
-    font-weight: 900;
-  }
+.projects {
+
 }
 </style>
