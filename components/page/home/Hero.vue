@@ -1,17 +1,22 @@
 <script setup lang="ts">
 onMounted(() => {
+  let wallpapers = [
+    "/assets/images/wallpapers/japan-tokyo-akihabara.jpg",
+    "/assets/images/wallpapers/southkorea-seoul.jpg",
+    "/assets/images/wallpapers/poland-warsaw.jpg",
+    "/assets/images/wallpapers/indonesia-jakarta.jpg",
+  ];
+
   let heroElement: HTMLElement | null = document.getElementById("hero");
   if (heroElement) {
-    if (getRandomInt(1) == 0) {
-      heroElement.style.backgroundImage = `url("/assets/images/wallpapers/japan-tokyo-akihabara.jpg")`;
-    } else if (getRandomInt(1) == 1) {
-      heroElement.style.backgroundImage = `url("/assets/images/wallpapers/southkorea-seoul.jpg")`;
+    if (wallpapers.length > 0) {
+      heroElement.style.backgroundImage = `url(${wallpapers[getRandomInt(wallpapers.length)]})`;
     }
   }
-})
+});
 
-function getRandomInt(max) {
-  return Math.floor(Math.random() * (max + 1));
+function getRandomInt(max: number): number {
+  return Math.floor(Math.random() * max);
 }
 </script>
 
@@ -23,7 +28,6 @@ function getRandomInt(max) {
 
 <style scoped lang="scss">
 .hero {
-  background-image: url("/assets/images/wallpapers/japan-tokyo-akihabara.jpg");
   height: 100vh;
   width: 100vw;
   background-size: cover;
@@ -31,7 +35,6 @@ function getRandomInt(max) {
   display: flex;
   justify-content: center;
   align-items: center;
-  //margin-bottom: 20px;
   box-shadow: 0 0 100px rgba(0, 0, 0, 0.2);
 
   p {
